@@ -3,6 +3,10 @@ import '../styles/Queue.css';
 
 export default class Queue extends React.Component {
     render () {
-        return null;
+        return (
+        	<div>
+        	hi
+        	</div>
+        );
     };
 }
