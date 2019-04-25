@@ -5,7 +5,7 @@ export default class Queue extends React.Component {
     render () {
         return (
         	<div>
-        	hi
+        	hello
         	</div>
         );
     };
