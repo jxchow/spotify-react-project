@@ -1,0 +1,18 @@
+.card {
+    width: 300px;
+}
+
+.card-buttons {
+    justify-content: center;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.login-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
