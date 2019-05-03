@@ -1,0 +1,20 @@
+.music-player-card {
+    height: 80px;
+    width: 300px;
+}
+
+.controls {
+    padding-top: 15px;
+}
+
+.icon {
+    height: 38px;
+    width: 38px;
+}
+
+.music-player-container {
+    position: absolute;
+    left: 37%;
+    top: 85%;
+    transform: translateX(-50%);
+}

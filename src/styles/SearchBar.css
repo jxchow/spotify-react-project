@@ -1,0 +1,14 @@
+.search-bar {
+    width: 500px;
+}
+
+.search-container {
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    transform: translateX(-50%);
+}
+
+.dropdown {
+    transform: translate3d(-305px, -48px, 0px);
+}

@@ -1,0 +1,17 @@
+.queue-list-container {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    background-color: #909090;
+    overflow-y: scroll;
+    z-index: -1;
+}
+
+.queue-list {
+    width: 300px;
+}
+
+.queue-item {
+    color: #fbfbfb;
+    margin: 16px;
+}
