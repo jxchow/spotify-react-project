@@ -7,14 +7,14 @@
     padding-top: 15px;
 }
 
-.play-icon {
+.icon {
     height: 38px;
     width: 38px;
 }
 
 .music-player-container {
     position: absolute;
-    left: 50%;
+    left: 37%;
     top: 85%;
     transform: translateX(-50%);
 }

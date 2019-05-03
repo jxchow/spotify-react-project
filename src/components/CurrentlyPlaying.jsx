@@ -6,20 +6,21 @@ import Typography from '@material-ui/core/Typography';
 
 export default class CurrentlyPlaying extends React.Component {
     render () {
+        const { imageUrl, song, artist } = this.props;
         return (
             <div className="song-container">
                 <Card className="song-card">
                     <img
                         className="album-image"
-                        src="http://placekitten.com/400/400"
+                        src={imageUrl}
                         alt="text"
                     />
                     <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                        Song Name
+                        {song}
                     </Typography>
                     <Typography component="p">
-                        Artist Name
+                        {artist}
                     </Typography>
                     </CardContent>
                 </Card>
