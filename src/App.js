@@ -1,12 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './styles/App.css';
 import Login from './components/Login.jsx';
 import SearchBar from './components/SearchBar.jsx';
 import CurrentlyPlaying from './components/CurrentlyPlaying.jsx';
 import MusicPlayer from './components/MusicPlayer.jsx';
 import Queue from './components/Queue.jsx';
-import MusicTrack from './components/MusicTrack.jsx';
 import UserProfile from './components/UserProfile.jsx';
 
 import Spotify from "spotify-web-api-js";
@@ -15,7 +13,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      authenticated: true,
+      authenticated: false,
       devices: [],
       currentDevice: "",
       queue: [],
@@ -134,7 +132,6 @@ class App extends React.Component {
             {currentlyPlaying ? this.renderCurrentlyPlaying(currentlyPlaying) : <CurrentlyPlaying imageUrl="http://placekitten.com/400/400" song="Song Title" artist="Artist Name" />}
             <MusicPlayer hasNext={queue.length > 0} isPlaying={isPlaying} onPlay={() => this.togglePlayPause()} onNext={() => this.handleNext()} />
             <Queue songList={queue} />
-            <MusicTrack />
             <UserProfile />
           </div>
         ) : (
